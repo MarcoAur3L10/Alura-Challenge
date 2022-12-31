@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="index.js"></script>
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div class="caja">
+                <h1><a href="index.html"><img class="logoImg" src="img/letter-m.png" alt="LogoM"></a></h1>
+            </div>
+        </header>
+        <main class="principal">
+            <div class="wrapper">
+                <div class="text">
+                    <textarea id="input" class="input" placeholder="Ingrese Texto a encriptar" onkeyup="darFormato(this), this.value = SoloNumLet(this.value)"></textarea>
+                    <textarea id="output" class="output" placeholder="Encriptando"></textarea>
+                </div>
+                <ul class="controls">
+                    <li class="cambio"><i id="change" onclick="change(), darFormato2();" class="fas fa-exchange-alt"></i></li>
+                    <div class="icons">
+                        <i id="copy" onclick="copy()" class="fas fa-copy"></i>
+                    </div>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

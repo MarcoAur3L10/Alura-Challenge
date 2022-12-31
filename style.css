@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #d2eaec;
+}
+
+.logoImg{
+    height: 3em;
+    width: 3em;
+    margin: 5%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.logoImg:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.wrapper{
+    border: 1px solid #bbb;
+    background-color: #c2cfe8;
+}
+
+.wrapper .text{
+    display: flex;
+    border-bottom: 1px solid #bbb;
+    background: #e5e5e5;
+}
+
+.text .output{
+    border-left: 1px solid #bbb;
+    border-radius: 0px;
+}
+
+.text textarea{
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    resize: none;
+}
+
+.controls{
+    list-style: none;
+    padding: 12px 15px;
+}
+
+.controls, li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls .icons i{
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.icons i:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.controls .cambio{
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.cambio:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header header"
+                         "principal principal";
+}
+
+.contenedor .header{
+    grid-area: header;
+}
+
+.contenedor .principal{
+    grid-area: principal;
+}
